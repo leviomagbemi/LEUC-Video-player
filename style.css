@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+/* base styling */
+body {
+  background: radial-gradient(#5a6d7e, #152232);
+}
+
+video {
+  width: 100%;
+}
+
+#app {
+  max-width: 1170px;
+  margin: 1rem auto;
+  border-radius: 16px;
+}
+
+#header {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+#header h3 {
+  color: #e9f0f1;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+#fileElemContainer {
+  margin-bottom: 1rem;
+  width: 470px;
+  padding: 6px;
+  justify-items: center;
+  text-align: center;
+  color: #bfbcbd;
+  border: 2px solid #bfbcbd;
+  background-color: #474e56;
+}
+
+#videosContainer {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+}
+
+#currentVideoContainer {
+  position: relative;
+}
+
+#currentVideoContainer video {
+  border-radius: 24px;
+}
+
+#allVideosContainer {
+  background-color: #16171b;
+  padding: 1rem;
+  max-height: 500px;
+  border-radius: 16px;
+  overflow: hidden scroll;
+}
+
+#allVideosContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.video {
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  width: auto;
+}
+
+.video p {
+  text-align: left;
+  color: #bfbcbd;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.video video {
+  border-radius: 8px;
+}
+
+#dc {
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+}
+
+#duration {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: inherit;
+}
+
+#durationCount {
+  color: #f60600;
+  text-align: end;
+  margin-left: auto;
+}
+
+#durationBarContainer {
+  position: relative;
+  width: 710px;
+  height: 5px;
+  background-color: #797979;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+#durationBar {
+  position: absolute;
+  display: inline-block;
+  border-radius: 4px;
+  height: inherit;
+  background-color: #f60600;
+}
+
+#controlsContainer {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+  margin-top: 1rem;
+  max-width: 750px;
+}
+
+#controlsContainer button {
+  background: none;
+  border: none;
+}
+
+#play {
+  color: #797979;
+}
+
+#stop {
+  color: #f60600;
+}
+
+#controlsContainer #prev {
+  color: #797979;
+}
+
+#controlsContainer #next {
+  color: #797979;
+}
+
+#volumeContainer {
+  color: #fff;
+}
+
+#volumeContainer #volumeRange {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 10px;
+  border-radius: 8px;
+  background-color: #797979;
+  display: none;
+}
+
+#volumeContainer #volume {
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 10px;
+  border-radius: 8px;
+  background-color: #f60600;
+}
+
+#volumeContainer #volumeIcon {
+  color: #f60600;
+}
